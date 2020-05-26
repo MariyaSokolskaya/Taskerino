@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/newTaskNameText"
+        android:text="@string/task_name"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:textColor="@color/textColorAccent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/hint_name"
+        android:textColorHint="@color/textColor"
+        android:textSize="20sp"
+        android:textColor="@color/textColor"
+        android:padding="5dp"
+        android:layout_below="@id/newTaskNameText"
+        android:id="@+id/newTaskNameField" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="@string/button_new_task"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:layout_below="@id/newTaskNameField"
+        android:padding="5dp"
+        android:onClick="newTaskButtonClick"
+        android:id="@+id/newTaskButton"
+        />
+</RelativeLayout>
